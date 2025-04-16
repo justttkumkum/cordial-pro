@@ -1,0 +1,76 @@
+<!-- <h1> Sign Up </h1> -->
+
+<!-- 
+<form action="/users/create" method="POST">
+    <input type="text" name="name" placeholder="enter your name" required>
+    <input type="email" name="email" placeholder="enter your email" required>
+    <input type="password" name="password" placeholder="enter your password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm password" required>
+    
+    <input type="submit" value="Sign Up">
+    </form>
+ -->
+
+
+
+ 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/user_sign_up.css">
+        </head>
+       
+        
+        <form action="/users/create" method="POST" style="max-width:500px;margin:auto">
+          <h2 id="heading2">SignUp Form</h2>
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Name" name="name" required>
+          </div>
+        
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email" required>
+          </div>
+          
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="password" required>
+          </div>
+          
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Confirm Password" name="confirm_password">
+          </div>
+        
+
+          <!-- <p>
+            <a href="/users/auth/google">Google SignIn / Up</a>
+          </p> -->
+
+          <div id="google-btn-container">
+            <a class="google-btn" href="/users/auth/google">
+              <div class="google-icon-wrapper">
+                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+              </div>
+              <p class="btn-text"><b>Sign in with google</b></p>
+            </a>
+            </div>
+            
+
+            <div id="google-btn-container">
+              <a class="google-btn" href="/users/auth/facebook">
+                <div class="google-icon-wrapper">
+                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png">
+                </div>
+                <p class="btn-text"><b>Sign in with Facebook</b></p>
+              </a>
+              </div>
+
+         <br>
+          <input id="btn" type="submit" value="Sign Up">
+        </form>
+
+
+        
